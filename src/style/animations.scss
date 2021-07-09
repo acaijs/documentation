@@ -1,0 +1,18 @@
+// -------------------------------------------------
+// Come In
+// -------------------------------------------------
+
+.comein {
+	overflow: hidden;
+}
+
+.comein > * {
+	animation: comein .4s ease;
+}
+
+@keyframes comein {
+	from {
+		opacity: 0;
+		transform: translate(20px, 0);
+	}
+}

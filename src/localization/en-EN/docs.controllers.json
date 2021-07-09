@@ -1,0 +1,11 @@
+{
+	"CONTROLLERS": "Controllers",
+	"TEXT_01": "Controllers are the \"final\" part of the lifecycle of your application, where you actually handle the request that you receive. You have pretty much total freedom to do controllers as you please, you can create a class with public methods, export an object or simply the function that will receive the request. When returning data from the method, you can return anything you wish, the server will make a smart guess and change the response accordingly, for example, if you return an object, it will change the headers to \"application/json\". The following examples uses a class:",
+	"TEXT_02": "As you can see, you do not need to extend anything or import any interface. If you describe a constructor, it will also receive the request, so you can receive it as composition instead of an argument. Controllers can use async methods without any problem, also.",
+	"TEXT_03": "If you wish to know more about the request received, you can checkout the interfaces page or the server module.",
+	"TEXT_04": "Response utility object is an extra feature from the server that allows you to build a more robust response, passing the status code, extra headers or even a static view file (so you don't have to worry about the file import, parse and response). You can concatenate method calls or if you prefer, pass everything as a object directly to the response method call. The view path can be configured by your sever, that is stored inside `config/paths.ts`",
+	"TITLE_01": "Using as an object",
+	"TITLE_02": "Using as a function",
+	"TITLE_03": "Using the response utility object",
+	"COMMENT": "Your fancy stuff here"
+}

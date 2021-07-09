@@ -1,0 +1,31 @@
+.collapse {
+	display: flex;
+	flex-direction: column;
+
+	&.open .list {
+		height: 100%;
+	}
+}
+
+.toggle {
+	background: transparent;
+	border: transparent;
+
+	padding: 10px 10px 10px 15px !important;
+
+	i {
+		float: right;
+		
+	}
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+
+	height: 0;
+	overflow: hidden;
+	transition: height .2s ease;
+
+	padding-left: 20px;
+}

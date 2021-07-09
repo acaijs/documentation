@@ -1,0 +1,60 @@
+// -------------------------------------------------
+// Fonts
+// -------------------------------------------------
+
+@font-face {
+	font-family: firaGO;
+	src: url(../font/firaGO/FiraGO-Regular.otf);
+}
+
+@font-face {
+	font-family: firaGO-bold;
+	src: url(../font/firaGO/FiraGO-Bold.otf);
+}
+
+@font-face {
+	font-family: firaGO-book;
+	src: url(../font/firaGO/FiraGO-Book.otf);
+}
+
+@font-face {
+	font-family: firaGO-italic;
+	src: url(../font/firaGO/FiraGO-Italic.otf);
+}
+
+@font-face {
+	font-family: firaGO-light;
+	src: url(../font/firaGO/FiraGO-Light.otf);
+}
+
+@font-face {
+	font-family: firaGO-medium;
+	src: url(../font/firaGO/FiraGO-Medium.otf);
+}
+
+@font-face {
+	font-family: firaGO-medium-italic;
+	src: url(../font/firaGO/FiraGO-MediumItalic.otf);
+}
+
+@font-face {
+	font-family: firaGO-semi-bold;
+	src: url(../font/firaGO/FiraGO-SemiBold.otf);
+}
+
+// -------------------------------------------------
+// Set
+// -------------------------------------------------
+
+* {
+	font-family: firaGO-light;
+	font-weight: 400;
+}
+
+// -------------------------------------------------
+// Classes
+// -------------------------------------------------
+
+.text-bold {
+	font-weight: bold;
+}

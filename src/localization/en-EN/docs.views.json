@@ -1,0 +1,4 @@
+{
+	"VIEWS": "Views",
+	"TEXT_01": "For now views are just static html files that can be loaded into the the response utility view. We are planning to add a template engine in the future."
+}

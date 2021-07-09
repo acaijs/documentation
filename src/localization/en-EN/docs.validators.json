@@ -1,0 +1,21 @@
+{
+	"VALIDATORS": "Validators",
+	"TEXT_01": "When submitting a request with a body, it's good practice for you to sanitize it's data, meaning you can validate and mask it's values to prevent unwanted fields to be set. That's where the validators come in. Checkout the following example:",
+	"TEXT_02": "the getSchema method returns a list of validation rules that will be used when the request is made. It expects an object of string array values. When passing the rules, you can also give them arguments, seeing the example above, the text rule is passing two arguments: 25 max size of the text, and 5 min size of the text. You can read more about each rule and it's expected arguments further down this page. You can use the validator as following:",
+	"TEXT_03": "The validation object generated contains three useful getters: validated (returns only the fields mentioned in the validation schema), errors (all the validation errors in case you disable exception on error) and fields (returns all the fields, validated or not). By the way, we mentioned disabling throwing exceptions on validation errors, how can you do that? Simple:",
+	"TITLE_01": "Available rules",
+	"RULE_01": "Expects the given value be of type array.",
+	"RULE_02": "Expects that the given key is followed by a key named `<key>_confirmation` and it has the same value.",
+	"RULE_03": "RegEx the string value to be a valid email format, does not check if it's an actual valid existing email.",
+	"RULE_04": "Expects the type to be of number type. If the first argument is passed is strict, it will only accept numbers, not convertable strings.",
+	"RULE_05": "Expects the given value be of type object.",
+	"RULE_06": "Expects the value to be present, not accepting undefined or null.",
+	"RULE_07": "Expects the given value be of type string.",
+	"RULE_08": "Expects the given value be considered truthy. Accepts: true, 1, any non empty string, etc.",
+	"TITLE_02": "Writing your own rules",
+	"TEXT_04": "In case you have the need for a custom rule, something we do not cover, you may add your own rules into the validator, see the example below:",
+	"COMMENT_01": "Validation to check if value should pass",
+	"COMMENT_02": "your validation here",
+	"COMMENT_03": "Message to be returned in case of validation error",
+	"TEXT_05": "All rules are stored globally by the validator package, meaning you can overwrite any vanilla rules by just passing another rule with the same name. You can also get the current rules by importing { rules } that is a method that returns it as a list. `setRule` as seen above, `setRules` to set multiple rules at the same time. And `clearRules` to clear all the rules so you can start slate clean. You can add those rules with a provider or by adding a config file for it."
+}

@@ -1,0 +1,23 @@
+.background {
+	background-color: #2B1140;
+	
+	tab-size: 4 !important;
+	-moz-tab-size: 4 !important;
+
+	padding: 40px 18px;
+	border-radius: 8px;
+
+	:global {
+		.language-bash, .language-bash .hljs-built_in {
+			color: white !important;
+		}
+
+		.language-javascript,.language-typescript,.hljs-title {
+			color: var(--bs-secondary);
+		}
+
+		.hljs-keyword {
+			color: white;
+		}
+	}
+}

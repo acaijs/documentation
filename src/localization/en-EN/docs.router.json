@@ -1,0 +1,16 @@
+{
+	"ROUTER": "Router module",
+	"TITLE_01": "Usage",
+	"TITLE_02": "Grouping",
+	"COMMENT_01": "Use the router to match it",
+	"TEXT_01": "You can group routes, that will make the callbacks inside of them, use their context. Groups can be nested.",
+	"TITLE_03": "HTTP Methods",
+	"TEXT_02": "You can use methods to bind HTTP methods to routes.",
+	"COMMENT_02": "equivalent of route.any",
+	"COMMENT_03": "doesn't care about http method",
+	"TITLE_04": "Options",
+	"TEXT_03": "Sometimes you wish to pass additional information to a route, such as a middleware, or anything else. You can bind extra information to the context with options. Objects and arrays will automaticly be joined, if you want to avoid this behaviour, prefix the option key with `!`. Options will also prevent value duplication in arrays.",
+	"COMMENT_04": "routes inside of here will inherit the parents options",
+	"COMMENT_05": "prefixing an option with ! will overwrite it",
+	"COMMENT_06": "middleware value: [\"auth\"]"
+}

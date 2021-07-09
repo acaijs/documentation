@@ -1,0 +1,32 @@
+.container {
+	min-height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	> div {
+		position: relative;
+	}
+}
+
+.img {
+	line-height: 218px;
+	font-size: 240px;
+	font-family: firaGO-bold;
+
+	color: var(--bs-primary);
+	opacity: 0.1;
+
+	position: absolute;
+
+	bottom: 50%;
+	right: 50%;
+}
+
+.text {
+	font-size: 120px;
+	font-family: firaGO-bold;
+
+	color: var(--bs-primary);
+}

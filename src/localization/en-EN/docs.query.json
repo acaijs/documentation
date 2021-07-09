@@ -1,0 +1,20 @@
+{
+	"QUERY": "Query Builder Module",
+	"TEXT_01": "A simple modular, scalable query builder that let you toggle strategies to easily, used and created by Açaí Framework.",
+	"TITLE_01": "Supports",
+	"TITLE_02": "Setup",
+	"TEXT_02": "The first thing you are going to need is setup your query, you can easily define your default query or just setup one as follows:",
+	"COMMENT_01": "Add query of sql type",
+	"COMMENT_02": "or setup a default query so you can easily import",
+	"COMMENT_03": "Optional sql query settings, if you want to pass any",
+	"COMMENT_04": "now every time you call query without arguments, it will look for the default query",
+	"COMMENT_05": "this is a postgreSQL query builder",
+	"TITLE_03": "Querying",
+	"TEXT_03": "You can easily search select using the query",
+	"TEXT_04": "Our query builder smartlys build your raw string query so you don't have to worry about the details, for example:",
+	"COMMENT_06": "will output",
+	"TITLE_04": "Inserting",
+	"TITLE_05": "Updating",
+	"TITLE_06": "Deleting",
+	"": ""
+}

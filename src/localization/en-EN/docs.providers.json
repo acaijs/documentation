@@ -1,0 +1,6 @@
+{
+	"PROVIDERS": "Providers",
+	"TEXT_01": "Providers work as managers for the services lifecycle, responsible for setting they up before the server starts and handling errors.",
+	"TEXT_02": "As you can see, you can execute code when starting the server, it accepts a promise as a return, so the server will wait for the service to actually boot up. But as mentioned earlier, you can handle errors, but what does it mean? Usually specific services throw specific errors, you can catch those (and those only) to give a better treatment and sanitization, for example, you can handle validation errors specific on the validator provider. Making it easy to overwrite standard behaviours, but be careful, returning a message for every error will make the provider catch all of them, overwriting everything it touches.",
+	"TEXT_03": "Looking at the example above, you can see that we are only returning a response for the error catch if it passes our condition, meaning we are only catching/overwriting specific exceptions. So if for example, a modelNotFound exception is thrown, other providers can handle them, or just leave it for the server for a standard message output."
+}

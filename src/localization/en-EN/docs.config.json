@@ -1,0 +1,15 @@
+{
+	"CONFIG": "Config module",
+	"TEXT_01": "Açai config module is a small tool that helps you handle data inside of your application. It exports a global config by default, and an option to create a scoped config.",
+	"TITLE_01": "Usage",
+	"COMMENT_01": "access your env variables with",
+	"COMMENT_02": "or",
+	"COMMENT_03": "you can access your config with",
+	"COMMENT_04": "or",
+	"COMMENT_05": "you can also set a config with",
+	"TEXT_02": "If you wish to bind your env variables with your config variables, you can call `config.fetchEnv(undefined, true)`, this will store all your env variables inside of the config.",
+	"TITLE_02": "Optional envs",
+	"TEXT_03": "By default, config will try to fetch from `.env`, but you can pass a preset to try. If not found, it will alert on the console and try to fetch .env instead.",
+	"COMMENT_06": "will fetch env from .env.testing",
+	"COMMENT_07": "will fetch env from .env.production"
+}

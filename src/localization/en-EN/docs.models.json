@@ -1,0 +1,14 @@
+{
+	"MODELS": "Models",
+	"TEXT_01": "Just like the getting started section said, models can be considered a reusable set of code that handles similar groups of data, such as: user, post, comment, picture, etc. But what it actually means and what it actually should do? Açaí Framework proposes that you are free to do with the code as you please, but we recommend consider the following: models should handle only the communication with the database/storage, and meaning as such, shouldn't contain any business logic, that should be relayed to the service layer. Presentation should also not be put inside of a model, since it tange an absolute state, so if you have more than one way of presenting your model, this could bloat your code very easily. But enough talk, let's see an example of a model:",
+	"TEXT_02": "There are three main parts of a model class that should be considered when creating one:",
+	"TITLE_01": "The Table decorator",
+	"TEXT_03": "This is responsible for adding the class into an internal array of models, that are used for auto migrations, for telling what table name it has (the first argument) and the primary key name (second optional parameter, defaults to id). You can also pass the table and primary key manually inside of the model if you wish.",
+	"TITLE_02": "The Field decorator",
+	"TEXT_04": "As a measurement of security, the field decorator helps you send unwanted data to your database, so only properties added as fields will be sent. This decorator is also responsible for masking data (from the server, to the server, when setting a field, and when serializing to object) using our dynamic types (you can read more below), this is a simple way to reuse logic applied to common fields, such as date, number, boolean, hashed fields. It defaults it to string if no value is passed.",
+	"TITLE_03": "The model class",
+	"TEXT_05": "More than just a wrap of data, the model class provides tons of helpful methods for retrieving, saving, deleting, etc your data. It internally uses the `@acai/query` package for all transactions with the database.",
+	"TITLE_04": "CRUD operations with models",
+	"TEXT_06": "Similar to the query builder, the model has a bind that automatically bundles the received data as a model and other quality of life methods, you can checkout below:",
+	"TEXT_07": "As you can see, you easily have access to a bunch of CRUD operations, and if you ever need to refine your query, you can directly call the `.query()` method, that will bind the table and primary key to the query builder, making it easy to have total freedom over the query built. And it returns the data formatted into the model. An interesting detail is that if you retrieve a model from the database, it will trigger the update method on save, if you created it or cloned it, it will trigger the insert method call internally."
+}

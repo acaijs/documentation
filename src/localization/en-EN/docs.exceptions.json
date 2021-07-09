@@ -1,0 +1,10 @@
+{
+	"EXCEPTIONS": "Exceptions",
+	"TEXT_01": "Exceptions are part of the `@acai/utils` package and is considered optional.",
+	"TEXT_02": "Exceptions are a wrap over the native Error class provided by javascript, they allow you to pass additional data to it, customize it's render and everything else.",
+	"TEXT_03": "As you can see, we can easily format the constructor of the class to receive what is important to us, and we generate the extra data on the fly based on it to pass to the super class. On the method render, we can easily format what will be sent to the user (but remember, this can be overwritten by a provider that requires so). This method is optional and you can rely on our default render method.",
+	"TEXT_04": "If you do not understand the response method call that we are using, you can checkout the server module or the controller page for more information.",
+	"TEXT_05": "Now that you have your own custom exception, you can easily throw it in your code. The server will take care of checking compability with any providers, and if not, calling your render method. Easy as that.",
+	"COMMENT_01": "This enables the server to log the error into the console, it defaults to true.",
+	"COMMENT_02": "Log into console, or save in an external drive for later inspection."
+}
