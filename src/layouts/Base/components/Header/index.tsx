@@ -2,7 +2,8 @@ import Link from 'next/link'
 
 import Container from 'components/Container'
 import Logo from 'components/Logo'
-import SearchBar from 'components/SearchBar'
+
+import SearchBar from '../SearchBar'
 
 import * as S from './styles'
 
@@ -13,7 +14,7 @@ const Header = () => {
         <S.Nav>
           <S.Brand>
             <Link href="/" passHref>
-              <a>
+              <a aria-label="AçaiJS, Back to homepage">
                 <Logo />
               </a>
             </Link>

@@ -1,12 +1,21 @@
-import Container from 'components/Container'
-import Soon from 'components/Soon'
+import { GetStaticProps } from 'next'
 
-const BlogPage = () => {
-  return (
-    <Container>
-      <Soon name="Blog" />
-    </Container>
-  )
+import BlogLayout from 'layouts/Blog'
+
+import getAllMdFiles from 'utils/getMdFiles'
+
+export const getStaticProps: GetStaticProps = () => {
+  const posts = getAllMdFiles('blog')
+
+  return {
+    props: {
+      posts
+    }
+  }
 }
 
-export default BlogPage
+const BlogHomePage = ({ ...props }) => {
+  return <BlogLayout {...props} />
+}
+
+export default BlogHomePage

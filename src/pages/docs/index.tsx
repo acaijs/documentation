@@ -1,10 +1,5 @@
-import Container from 'components/Container'
-import Soon from 'components/Soon'
+import DocsLayout from 'layouts/Docs'
 
-const DocsPage = () => (
-  <Container>
-    <Soon name="Docs" />
-  </Container>
-)
+const DocsPage = () => <DocsLayout />
 
 export default DocsPage
