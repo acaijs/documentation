@@ -8,8 +8,6 @@ const HomeLayout = () => {
     <Container>
       <Hero />
 
-      <hr />
-
       <Features />
     </Container>
   )
