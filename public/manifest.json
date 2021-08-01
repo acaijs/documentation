@@ -1,0 +1,21 @@
+{
+  "name": "Açai",
+  "short_name": "Açai",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#fff",
+  "description": "Açai",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#8033BC"
+}
