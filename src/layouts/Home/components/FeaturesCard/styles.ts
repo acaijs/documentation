@@ -1,4 +1,4 @@
-import { darken, lighten } from 'polished'
+import { darken } from 'polished'
 import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.article`
@@ -37,6 +37,6 @@ export const Icon = styled.div`
 
 export const Content = styled.p`
   ${({ theme }) => css`
-    font-weight: ${theme.fontWeights.medium};
+    font-weight: ${theme.fontWeights.regular};
   `}
 `

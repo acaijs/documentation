@@ -42,9 +42,9 @@ export const Links = styled.div`
     }
 
     a {
-      text-decoration: none;
+      color: ${theme.colors.black};
       font-weight: ${theme.fontWeights.medium};
-
+      text-decoration: none;
       transition: 0.2s;
 
       &:hover {

@@ -19,7 +19,7 @@ const Hero = () => {
         {t('home:title')}
       </Heading>
 
-      <Heading level={3} size="xl" weight="medium" color="grey">
+      <Heading level={3} size="xl" weight="regular" color="grey">
         Açaí is a framework that focuses on simplicity and extensebility,
         enabling you to work fast and build amazing application with incredible
         ease.

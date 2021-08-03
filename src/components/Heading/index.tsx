@@ -1,4 +1,5 @@
 import theme from 'styles/theme'
+
 import * as S from './styles'
 
 export type HeadingProps = {

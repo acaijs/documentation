@@ -1,19 +1,22 @@
 import Container from 'components/Container'
+import MarkDownContent from 'components/MarkDownContent'
 import Sidebar from './components/Sidebar'
 
 import * as S from './styles'
 
 type DocsLayoutProps = {
-  children?: React.ReactNode
+  doc?: any
 }
 
-const DocsLayout = ({ children }: DocsLayoutProps) => {
+const DocsLayout = ({ doc }: DocsLayoutProps) => {
   return (
     <Container>
       <S.Wrapper>
         <Sidebar />
 
-        <S.Content>{children}</S.Content>
+        <S.Content>
+          <MarkDownContent dangerouslySetInnerHTML={{ __html: doc.content }} />
+        </S.Content>
       </S.Wrapper>
     </Container>
   )
