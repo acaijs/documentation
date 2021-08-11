@@ -1,25 +1,25 @@
-import Container from 'components/Container'
-import MarkDownContent from 'components/MarkDownContent'
-import Sidebar from './components/Sidebar'
+import Container from "components/Container"
+import MarkDownContent from "components/MarkDownContent"
+import Sidebar from "./components/Sidebar"
 
-import * as S from './styles'
+import * as S from "./styles"
 
 type DocsLayoutProps = {
-  doc?: any
+  doc?: any;
 }
 
 const DocsLayout = ({ doc }: DocsLayoutProps) => {
-  return (
-    <Container>
-      <S.Wrapper>
-        <Sidebar />
+	return (
+		<Container>
+			<S.Wrapper>
+				<Sidebar />
 
-        <S.Content>
-          <MarkDownContent dangerouslySetInnerHTML={{ __html: doc.content }} />
-        </S.Content>
-      </S.Wrapper>
-    </Container>
-  )
+				<S.Content>
+					<MarkDownContent dangerouslySetInnerHTML={{ __html: doc.content }} />
+				</S.Content>
+			</S.Wrapper>
+		</Container>
+	)
 }
 
 export default DocsLayout

@@ -1,49 +1,32 @@
-import Link from 'next/link'
+import Link from "next/link"
 
-import Collapse from 'components/Collapse'
+import Collapse from "components/Collapse"
 
-import * as S from './styles'
+import * as S from "./styles"
+import items from "./items"
 
 const Sidebar = () => {
-  const items = ['Get started']
-
-  return (
-    <S.Wrapper>
-      <S.ListItem>
-        {items.map((item) => (
-          <S.Item key={item}>
-            <Collapse title={item}>
-              <S.ListItem>
-                <S.Item>
-                  <Link href="introduction" passHref>
-                    <S.ItemLink>Introduction</S.ItemLink>
-                  </Link>
-                </S.Item>
-
-                <S.Item>
-                  <Link href="download" passHref>
-                    <S.ItemLink>Download</S.ItemLink>
-                  </Link>
-                </S.Item>
-
-                <S.Item>
-                  <Link href="contents" passHref>
-                    <S.ItemLink>Contents</S.ItemLink>
-                  </Link>
-                </S.Item>
-
-                <S.Item>
-                  <Link href="javascript" passHref>
-                    <S.ItemLink>JavaScript</S.ItemLink>
-                  </Link>
-                </S.Item>
-              </S.ListItem>
-            </Collapse>
-          </S.Item>
-        ))}
-      </S.ListItem>
-    </S.Wrapper>
-  )
+	return (
+		<S.Wrapper>
+			<S.ListItem>
+				{Object.keys(items).map((item) => (
+					<S.Item key={item}>
+						<Collapse title={item}>
+							<S.ListItem>
+								{Object.keys(items[item]).map((id) => (
+									<S.Item key={id}>
+										<Link href={id} passHref>
+											<S.ItemLink>{items[item][id] as string}</S.ItemLink>
+										</Link>
+									</S.Item>
+								))}
+							</S.ListItem>
+						</Collapse>
+					</S.Item>
+				))}
+			</S.ListItem>
+		</S.Wrapper>
+	)
 }
 
 export default Sidebar

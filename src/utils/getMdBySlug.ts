@@ -1,27 +1,28 @@
-import fs from 'fs'
-import grayMatter from 'gray-matter'
+import fs from "fs"
+import grayMatter from "gray-matter"
 
-import MdToHtml from './markdownToHtml'
+import MdToHtml from "./markdownToHtml"
 
-type MdFilesProps = 'blog' | 'examples' | 'docs'
+const getFilePath = (path: string, slug: string, language?: string) => {
+	if (language && fs.existsSync(`./src/contents/_${path}/${language}/${slug}.md`)) return `./src/contents/_${path}/${language}/${slug}.md`
 
-const getMdFileBySlug = (path: MdFilesProps, slug: string) => {
-  const mdFileBySlug = fs.readFileSync(
-    `./src/contents/_${path}/${slug}.md`,
-    'utf-8'
-  )
+	return `./src/contents/_${path}/${slug}.md`
+}
 
-  const { content, data } = grayMatter(mdFileBySlug)
+const getMdFileBySlug = (path: "blog" | "examples" | "docs", slug: string, language?: string) => {
+	const mdFileBySlug = fs.readFileSync(getFilePath(path, slug, language), "utf-8")
 
-  const htmlContent = MdToHtml(content)
+	const { content, data } = grayMatter(mdFileBySlug)
 
-  return {
-    metas: {
-      ...data,
-      slug
-    },
-    content: htmlContent
-  }
+	const htmlContent = MdToHtml(content)
+
+	return {
+		metas: {
+			...data,
+			slug,
+		},
+		content: htmlContent,
+	}
 }
 
 export default getMdFileBySlug

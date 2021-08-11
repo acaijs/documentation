@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from "styled-components"
 
 export const Wrapper = styled.footer`
   ${({ theme }) => css`
@@ -7,10 +7,8 @@ export const Wrapper = styled.footer`
 `
 
 export const Content = styled.div`
-  ${({ theme }) => css`
     display: flex;
     justify-content: space-between;
-  `}
 `
 
 export const ListItems = styled.ul`

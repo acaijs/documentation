@@ -1,8 +1,8 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from "styled-components"
 
-import { lighten, transparentize } from 'polished'
+import { lighten, transparentize } from "polished"
 
-import { ButtonProps } from '.'
+import { ButtonProps } from "."
 
 export const Wrapper = styled.button<ButtonProps>`
   ${({ theme, bg }) => css`
@@ -25,14 +25,14 @@ export const Wrapper = styled.button<ButtonProps>`
     text-decoration: none;
 
     &:hover {
-      background: ${lighten('0.1', theme.colors[bg!])};
+      background: ${lighten("0.1", theme.colors[bg!])};
 
       box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%),
         0 2px 4px -1px rgb(0 0 0 / 6%);
     }
 
     &:focus {
-      box-shadow: 0 0 0 3px ${transparentize('0.5', theme.colors[bg!])};
+      box-shadow: 0 0 0 3px ${transparentize("0.5", theme.colors[bg!])};
     }
 
     svg {

@@ -1,5 +1,5 @@
-import { lighten } from 'polished'
-import styled, { css } from 'styled-components'
+import { lighten } from "polished"
+import styled, { css } from "styled-components"
 
 export const Wrapper = styled.button`
   ${({ theme }) => css`
@@ -16,20 +16,20 @@ export const Wrapper = styled.button`
     transition: 0.2s;
 
     &:hover {
-      background: ${lighten('0.5', theme.colors.primary)};
+      background: ${lighten("0.5", theme.colors.primary)};
     }
   `}
 `
 
 type ContentProps = {
-  isActive?: boolean
+  isActive?: boolean;
 }
 
 export const Content = styled.div<ContentProps>`
-  ${({ theme, isActive }) => css`
+  ${({ isActive }) => css`
     display: block;
     padding: 0 18px;
-    max-height: ${isActive ? '100%' : 0};
+    max-height: ${isActive ? "100%" : 0};
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   `}

@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from "styled-components"
 
-import { HeadingProps } from '.'
+import { HeadingProps } from "."
 
 export const Wrapper = styled.h2<HeadingProps>`
   ${({ theme, weight, size, color }) => css`

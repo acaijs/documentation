@@ -1,9 +1,7 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from "styled-components"
 
 export const Wrapper = styled.section`
-  ${({ theme }) => css`
-    text-align: center;
-  `}
+	text-align: center;
 `
 
 export const List = styled.div`

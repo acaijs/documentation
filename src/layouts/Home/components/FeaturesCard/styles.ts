@@ -1,5 +1,5 @@
-import { darken } from 'polished'
-import styled, { css } from 'styled-components'
+import { darken } from "polished"
+import styled, { css } from "styled-components"
 
 export const Wrapper = styled.article`
   ${({ theme }) => css`
@@ -23,7 +23,7 @@ export const Icon = styled.div`
     align-items: center;
     width: 80px;
     height: 80px;
-    background: ${darken('0.1', theme.colors.primary)};
+    background: ${darken("0.1", theme.colors.primary)};
     color: ${theme.colors.white};
     border-radius: ${theme.radii.full};
     margin-bottom: ${theme.spaces.sm};

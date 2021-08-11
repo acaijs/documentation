@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from "styled-components"
 
-import { lighten } from 'polished'
+import { lighten } from "polished"
 
 export const Wrapper = styled.input`
   ${({ theme }) => css`
@@ -20,7 +20,7 @@ export const Wrapper = styled.input`
 
     &:focus,
     &:hover {
-      background: ${lighten('0.03', '#edf2f7')};
+      background: ${lighten("0.03", "#edf2f7")};
     }
   `}
 `

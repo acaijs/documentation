@@ -1,16 +1,16 @@
-import * as S from './styles'
+import * as S from "./styles"
 
 export type SoonProps = {
-  name?: string
+  name?: string;
 }
 
 const Soon = ({ name }: SoonProps) => {
-  return (
-    <S.Wrapper>
-      <S.PageName>{name}</S.PageName>
+	return (
+		<S.Wrapper>
+			<S.PageName>{name}</S.PageName>
       Coming soon
-    </S.Wrapper>
-  )
+		</S.Wrapper>
+	)
 }
 
 export default Soon
