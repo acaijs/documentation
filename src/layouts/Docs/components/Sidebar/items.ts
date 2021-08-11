@@ -3,7 +3,7 @@ const sidebarItems: Record<string, Record<string, string>> = {
 		contents: "Contents",
 	},
 	"Modules": {
-
+		server: "Server",
 	},
 }
 
