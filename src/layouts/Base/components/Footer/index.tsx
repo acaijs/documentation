@@ -14,6 +14,16 @@ const Footer = () => {
 					<S.ListItems>
 						<S.ListItem>
 							<a
+								href="https://vercel.com?utm_source=acaijs&utm_capaign=oss"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<img style={{ transform: "translate(0, -10px)" }} src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg" />
+							</a>
+						</S.ListItem>
+
+						<S.ListItem>
+							<a
 								href="https://twitter.com/acai_js"
 								target="_blank"
 								rel="noreferrer"
