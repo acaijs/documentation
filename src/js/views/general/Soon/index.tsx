@@ -1,24 +1,24 @@
-// Modules
-import useLocalization from "../../../modules/Localization";
+// Packages
+import { Grid, Title } from "yamiassu"
 
-// Component
-import style from "./style.module.scss";
+// Hooks
+import useLang from "../../../hooks/useLang"
 
-const NotFound = () => {
+export default function Soon() {
 	// -------------------------------------------------
 	// Properties
 	// -------------------------------------------------
 
 	// hooks
-	const _ = useLocalization("navigation");
-	
+	const _ = useLang("general")
+
 	// -------------------------------------------------
 	// Render
 	// -------------------------------------------------
 
 	return (
-		<div class={style.container}><div><span class={style.img}>{_("PAGE")}</span><span class={style.text}>{_("SOON")}</span></div></div>
-	);
-};
-
-export default NotFound;
+		<Grid container>
+			<Title>{_("SOON")}</Title>
+		</Grid>
+	)
+}

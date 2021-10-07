@@ -1,26 +1,24 @@
 {
-  "name": "acai",
-  "version": "0.0.0",
-  "scripts": {
-    "start": "vite",
-    "build": "tsc && vite build",
-    "serve": "vite preview"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.2",
-    "axios": "^0.21.1",
-    "bootstrap": "5.0.0-beta3",
-    "highlight.js": "^10.6.0",
-    "preact": "^10.5.9",
-    "preact-async-route": "^2.2.1",
-    "preact-custom-scrollbars": "^4.0.4",
-    "preact-router": "^3.2.1"
-  },
-  "devDependencies": {
-    "@prefresh/vite": "^2.0.0",
-    "@rollup/plugin-dynamic-import-vars": "^1.1.1",
-    "sass": "^1.32.7",
-    "typescript": "^4.1.3",
-    "vite": "^2.0.0"
-  }
+	"name": "yamiassu",
+	"version": "0.3.3",
+	"license": "BSD-3-Clause",
+	"scripts": {
+		"start": "vite",
+		"build": "vite build",
+		"serve": "vite preview"
+	},
+	"dependencies": {
+		"@acai/router": "^2.2.0-beta.3",
+		"preact": "^10.5.13",
+		"react-router-dom": "^5.3.0",
+		"yamiassu": "^0.3.3"
+	},
+	"devDependencies": {
+		"@acai/preset": "^0.2.0-beta.4",
+		"@preact/preset-vite": "^2.1.3",
+		"@types/react-router-dom": "^5.3.0",
+		"eslint": "^7.32.0",
+		"typescript": "^4.3.2",
+		"vite": "2.5.4"
+	}
 }

@@ -1,24 +1,28 @@
 // Packages
-import { Grid, Title } from "yamiassu"
+import { Text } from "yamiassu"
 
 // Hooks
 import useLang from "../../../hooks/useLang"
 
-export default function NotFound() {
+// Wraps
+import DocWrap from "../../../wrappers/DocWrap"
+
+export default function StartingDoc() {
 	// -------------------------------------------------
 	// Properties
 	// -------------------------------------------------
 
-	// hooks
-	const _ = useLang("general")
+	const _ = useLang("doc.starting")
 
 	// -------------------------------------------------
 	// Render
 	// -------------------------------------------------
 
 	return (
-		<Grid container>
-			<Title>{_("NOT_FOUND")}</Title>
-		</Grid>
+		<DocWrap title={_("TITLE")} sidebar="starting">
+			<Text>{[
+				_("P1"),
+			]}</Text>
+		</DocWrap>
 	)
 }
