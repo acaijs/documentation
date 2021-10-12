@@ -1,6 +1,7 @@
 const sideAdvancedMenus = [
 	{
 		key: "START",
+		type: "link",
 		link: "/docs/advanced",
 	},
 	{

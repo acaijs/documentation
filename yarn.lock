@@ -1626,10 +1626,10 @@ yallist@^4.0.0:
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-4.0.0.tgz#9bb92790d9c0effec63be73519e11a35019a3a72"
   integrity sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
 
-yamiassu@^0.3.3:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/yamiassu/-/yamiassu-0.3.3.tgz#3be02bfc71aed067bfb76952732d756a3819e9bc"
-  integrity sha512-UYcQgC0hIcmy7ZKbVp04jZ1fzl4rnQPrIubhGsGQa01/8x5ZZIkCBfeMgINdFmp5Ntl0kVGCvT/MMsuFyGZepQ==
+yamiassu@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/yamiassu/-/yamiassu-0.4.0.tgz#8878b7f78f5d2409475d62f9e056a044ad81bad1"
+  integrity sha512-x3IjNYaKuCKThb8a4uI5J/pUZqpDcGmlNbkboeAgElU4aIKIGFC8EQoe+0LZjPDbxQQyBrPCXuO4k4si3SU8ag==
   dependencies:
     "@stitches/react" "^1.1.0"
     highlight.js "^11.2.0"

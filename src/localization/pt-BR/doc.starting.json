@@ -1,4 +1,10 @@
 {
 	"TITLE": "Começando",
-	"P1": "Aqui iremos dar uma olhada em alguns tópicos avançados em relação aos módulos do AçaíJS, aprendendo a estender adaptadores e alguns truques extras que podemos realizar."
+	"P1": "Aqui começa sua jornada pela framework AçaíJS, já que expomos nossa API por completo, você pode começar sua estrutura com nosso boilerplate ou fazer do zero de sua maneira. Iremos cobrir as duas nessa documentação.",
+	"P2": "Usando o boilerplate você tem todas as bases configuradas e prontas para uso, como banco de dados, presenters, validations, etc.",
+	"P3": "Aqui você aprenderá a mexer com todos os módulos, fazer sua configuração e rodar um simples server HTTP com conexão ao banco de dados e validação.",
+	"T1": "Boilerplate",
+	"T2": "Do zero",
+	"L1": "Fazendo download do boilerplate",
+	"L2": "Iniciando projeto individuais"
 }

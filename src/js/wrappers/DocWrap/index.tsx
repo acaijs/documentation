@@ -41,7 +41,7 @@ export default function DocWrap(props: Props) {
 	return (
 		<Grid container direction="row">
 			<Grid col={2}>
-				<Sidebar data={menudata} />
+				<Sidebar data={menudata as any} />
 			</Grid>
 			<Grid col={10}>
 				{props.title && <Title>{props.title}</Title>}

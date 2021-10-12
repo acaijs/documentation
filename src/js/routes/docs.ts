@@ -5,12 +5,16 @@ route.group("/docs", () => {
 	route("/modules", "docs/Modules")
 
 	route.group("/starting", () => {
-		route("/", "docs/Starting")
+		route("/", "starting/Home")
+
+		route.group("/b", () => {
+			route("/download", "starting/Downloading")
+		})
 	})
 
 	route.group("/advanced", () => {
-		route("/", "docs/Advanced")
-		route("/server", "docs/Advanced")
-		route("/query", "docs/Advanced")
+		route("/", "advanced/Home")
+		route("/server", "advanced/Home")
+		route("/query", "advanced/Home")
 	})
 })

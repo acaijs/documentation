@@ -1,15 +1,17 @@
 const sidestartingMenus = [
 	{
 		key: "START",
-		link: "/docs/advanced",
+		type: "link",
+		link: "/docs/starting",
 	},
 	{
-		key: "SERVER",
-		link: "/docs/advanced/server",
+		key: "BOILERPLATE",
+		type: "title",
 	},
 	{
-		key: "QUERY",
-		link: "/docs/advanced/query",
+		key: "DOWNLOADING",
+		type: "link",
+		link: "/docs/starting/b/download",
 	},
 ]
 

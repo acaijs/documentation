@@ -1,5 +1,5 @@
 // Packages
-import { Text } from "yamiassu"
+import { Text, Highlight } from "yamiassu"
 
 // Hooks
 import useLang from "../../../hooks/useLang"
@@ -7,12 +7,12 @@ import useLang from "../../../hooks/useLang"
 // Wraps
 import DocWrap from "../../../wrappers/DocWrap"
 
-export default function StartingDoc() {
+export default function DownloadingDoc() {
 	// -------------------------------------------------
 	// Properties
 	// -------------------------------------------------
 
-	const _ = useLang("doc.starting")
+	const _ = useLang("docs.starting.download")
 
 	// -------------------------------------------------
 	// Render
@@ -22,6 +22,11 @@ export default function StartingDoc() {
 		<DocWrap title={_("TITLE")} sidebar="starting">
 			<Text>{[
 				_("P1"),
+				<Highlight data={`
+yarn create acai
+// or
+npm init acai
+				`} />,
 			]}</Text>
 		</DocWrap>
 	)
